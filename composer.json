@@ -26,5 +26,6 @@
                 "ZeusWebsockets\\ZeusWebsocketsServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
