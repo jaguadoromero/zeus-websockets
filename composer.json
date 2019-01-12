@@ -1,0 +1,29 @@
+{
+    "name": "jaguadoromero/zeus-websockets",
+    "description": "Websockets server for Laravel",
+    "keywords": [
+        "websockets",
+        "zeus-websockets"
+    ],
+    "require": {
+        "cboden/ratchet": "^0.4.1"
+    },
+    "authors": [
+        {
+            "name": "Juan Aguado",
+            "email": "jaguadoromero@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4": {
+            "ZeusWebsockets\\": "src/"
+        }
+    },
+    "extra":{
+        "laravel": {
+            "providers": [
+                "ZeusWebsockets\\ZeusWebsocketsServiceProvider"
+            ]
+        }
+    }
+}
