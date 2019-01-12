@@ -45,3 +45,6 @@ numprocs=1
 redirect_stderr=true
 stdout_logfile=/path/to/project/storage/logs/websockets.log
 ```
+
+## Uso desde Vue
+Para recibir / emitir websockets desde la parte cliente, está disponible la librería [Vue Zeus Websockets](https://github.com/jaguadoromero/zeus-websockets-client) para instalar desde **NPM**.
