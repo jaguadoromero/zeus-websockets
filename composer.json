@@ -3,7 +3,8 @@
     "description": "Websockets server for Laravel",
     "keywords": [
         "websockets",
-        "zeus-websockets"
+        "zeus-websockets",
+        "zeus websockets server"
     ],
     "require": {
         "cboden/ratchet": "^0.4.1"
