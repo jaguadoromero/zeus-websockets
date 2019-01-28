@@ -46,5 +46,27 @@ redirect_stderr=true
 stdout_logfile=/path/to/project/storage/logs/websockets.log
 ```
 
+## Emitir desde PHP
+Para emitir un websocket desde PHP:
+
+
+>**emit**((*EventName*, data, **[*channel*]**)
+
+*EventName*: Nombre del evento  
+
+*data*: Datos a enviar. Normalmente un array.
+
+*channel*: (Opcional) Nombre de canal (o canales) a los cuales se enviarán los datos. Si no se especifica se enviarán a todos los clientes conectados. Puede ser un string o un array si se quiere especificar varios canales.
+
+Ejemplo:  
+```php
+$client = new ZeusWebsockets\Client('wss://domain.test:6001');
+
+$client->onConnect(function ($connection) {
+    $data = ['example' => 10, 'data' => 'test'];
+    $connection->emit('eventName', $data, 'channel1');
+});
+```
+
 ## Uso desde Vue
 Para recibir / emitir websockets desde la parte cliente, está disponible la librería [Vue Zeus Websockets](https://github.com/jaguadoromero/zeus-websockets-client) para instalar desde **NPM**.
